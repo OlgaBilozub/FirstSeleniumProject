@@ -68,5 +68,25 @@ public class SecondSeleniumTest {
         driver.findElement(By.cssSelector("h3"));
         driver.findElement(By.cssSelector("[href^='/sitemap']"));
     }
-}
+    @Test
+    public void findElementByXpath(){
+        driver.findElement(By.xpath("//h3"));
+        driver.findElement(By.xpath("//div[@class='header']"));
+            driver.findElement(By.xpath("//input[@id='small-searchterms']"));
+            driver.findElement(By.xpath("//div[@id='mob-menu-button']"));
+            driver.findElement(By.xpath("//div[@class='top-menu-triangle']"));
+            driver.findElement(By.xpath("//div[@class='master-wrapper-page']"));
+            driver.findElement(By.xpath("//div[@class='header-links-wrapper']"));
+            driver.findElement(By.xpath("//h3[contains(text(),'My account')]"));
+            driver.findElement(By.xpath("//div[@id='bar-notification']"));
+            driver.findElement(By.xpath("//div[@class='ajax-loading-block-window']"));
+            driver.findElement(By.xpath("//h3[contains(text(),'Information')]"));
+            driver.findElement(By.xpath("//h3[contains(text(),'Customer service')]"));
+            driver.findElement(By.xpath("//div[@class='loading-image']"));
+            driver.findElement(By.xpath("//div[@class='column customer-service']"));
+            driver.findElement(By.xpath("//h3/parent::*"));
+        }
+    }
+
+
 
