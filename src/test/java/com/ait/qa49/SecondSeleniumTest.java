@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class SecondSeleniumTest {
+public class SecondSeleniumTest extends TestBase{
 
     WebDriver driver;
 
