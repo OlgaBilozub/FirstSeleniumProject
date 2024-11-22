@@ -7,32 +7,19 @@ import org.testng.annotations.Test;
 public class CreateAccountTests extends TestBase{
 
     @Test
+
     public void newRegistrationPositiveTest(){
-        // click on register
-        driver.findElement(By.cssSelector("[href='/register']")).click();
 
-        //type first name
-        driver.findElement(By.name("FirstName")).sendKeys("Marina");
+        clickOnRegister();
+        fillRegistrationForm(new User()
+                .setFirstName("Marina")
+                .setLastName("Karam")
+                .setEmail("Karam@gmail.com")
+                .setPassword("Karam123@"));
+        clickOnButtonRegister();
 
-        //type last name
-        driver.findElement(By.name("LastName")).sendKeys("Karam");
+        Assert.assertTrue(isElementPresent());
 
-        //type email
-       // driver.findElement(By.name("Email")).click();
-        driver.findElement(By.name("Email")).clear();
-        driver.findElement(By.name("Email")).sendKeys("karam@gmail.com");
-
-        //type password
-      //  driver.findElement(By.name("Password")).click();
-        driver.findElement(By.name("Password")).clear();
-        driver.findElement(By.name("Password")).sendKeys("Karam123@");
-        // type confirm password
-        driver.findElement(By.name("ConfirmPassword")).clear();
-        driver.findElement(By.name("ConfirmPassword")).sendKeys("Karam123@");
-
-
-        // click on button register
-        driver.findElement(By.id("register-button")).click();
-        Assert.assertTrue(isElementPresent(By.xpath("//input[@id='register-button']")));
     }
+
 }
