@@ -1,4 +1,4 @@
-package com.ait.qa49;
+package models;
 
 public class User {
 

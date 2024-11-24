@@ -1,17 +1,17 @@
 package com.ait.qa49;
 
+import com.ait.qa49.homework.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chromium.ChromiumDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class SecondSeleniumTest extends TestBase{
+public class SecondSeleniumTest extends TestBase {
 
     WebDriver driver;
 
