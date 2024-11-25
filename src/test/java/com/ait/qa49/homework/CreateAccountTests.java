@@ -1,5 +1,6 @@
 package com.ait.qa49.homework;
 
+import com.createaccount.fw.data.UserData;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -18,10 +19,10 @@ public class CreateAccountTests extends TestBase {
 
         app.getUserHelper().clickOnRegister();
         app.getUserHelper().fillRegistrationForm(new User()
-                .setFirstName("Marina")
-                .setLastName("Karam")
-                .setEmail("Karam@gmail.com")
-                .setPassword("Karam123@"));
+                .setFirstName(UserData.firstName)
+                .setLastName(UserData.lastName)
+                .setEmail(UserData.email)
+                .setPassword(UserData.password));
         app.getUserHelper().clickOnButtonRegister();
 
         Assert.assertTrue(app.getUserHelper().isElementPresent());

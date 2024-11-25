@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="First" verbose="1">
+    <test name="First1">
+        <classes>
+            <class name="com.ait.qa49.homework.CreateAccountTests"/>
+        </classes>
+    </test>
+</suite>
