@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa49.homework.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-25T18:41:04" hostname="DESKTOP-3N8OHH5" time="2.809">
+  <properties/>
+  <testcase name="newRegistrationPositiveTest" classname="com.ait.qa49.homework.CreateAccountTests" time="2.809"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
