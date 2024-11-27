@@ -32,7 +32,7 @@ public class CreateAccountTests extends TestBase {
                 .setPassword(UserData.password));
         app.getUserHelper().clickOnButtonRegister();
 
-        Assert.assertTrue(app.getUserHelper().isElementPresent());
+        Assert.assertTrue(app.getUserHelper().isRegisterPresent());
 
     }
 
@@ -49,7 +49,8 @@ public class CreateAccountTests extends TestBase {
                 .setPassword(password));
         app.getUserHelper().clickOnButtonRegister();
 
-        Assert.assertTrue(app.getUserHelper().isElementPresent());
+        Assert.assertTrue(app.getUserHelper().isRegisterPresent());
+
 
     }
 
@@ -62,7 +63,7 @@ public class CreateAccountTests extends TestBase {
 
         app.getUserHelper().clickOnButtonRegister();
 
-        Assert.assertTrue(app.getUserHelper().isElementPresent());
+        Assert.assertTrue(app.getUserHelper().isRegisterPresent());
 
     }
 

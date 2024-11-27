@@ -13,7 +13,7 @@ import java.util.List;
 
 public class DataProviders {
 
-    @DataProvider
+    @DataProvider(name = "addNewContactWithCsv")
     public Iterator<Object[]> addNewUserWithCsv() throws IOException {
         List<Object[]> list = new ArrayList<>();
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/contact.csv")));
@@ -31,10 +31,10 @@ public class DataProviders {
         return list.iterator();
     }
 
-    @DataProvider
+    @DataProvider(name = "addNewContact")
     public Iterator<Object[]> addNewUser() {
         List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{"Amir", "Amir", "amir@gm.com", "Hamburg",});
+        list.add(new Object[]{"Amir", "Amir", "amir@gm.com", "Hamburg"});
         list.add(new Object[]{"Amir", "Karam", "amir@gm.com", "Hamburg"});
         list.add(new Object[]{"Amir", "Amur", "amir@gm.com", "Hamburg"});
         return list.iterator();
